@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background star (unfilled state) -->
+    <item android:id="@android:id/background"
+        android:drawable="@android:drawable/btn_star_big_off" /> <!-- Default grey or unfilled star -->
+
+    <!-- Partial star (for fractional rating, if stepSize < 1) -->
+    <item android:id="@android:id/secondaryProgress"
+        android:drawable="@android:drawable/btn_star_big_on" /> <!-- Default yellow star -->
+
+    <!-- Filled star (active state) -->
+    <item android:id="@android:id/progress"
+        android:drawable="@drawable/star_filled_yellow" /> <!-- Custom yellow star -->
+</layer-list>

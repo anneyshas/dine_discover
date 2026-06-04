@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Holly Jacob-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Card_Factory.CardMoreActivity">
+    <include layout="@layout/wishlist_restaurant_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discoveryHeader"
+        android:layout_above="@+id/Discoveryfooter">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="15dp">
+                <ImageView
+                    android:src="@drawable/noodles"
+                    android:id="@+id/restaurantPhoto"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    >
+                </ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/accentColor"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/discoveryDetailsStr"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoveryRestaurantNameTitle"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discoveryRestName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/discoveryRestaurantNameText"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoveryCuisineTitle"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discoveryCuisine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/discoveryCuisineText"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoveryRatingTitle"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discoveryRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/discoveryRatingText"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoveryAddressTitle"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discoveryRestAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/discoveryAddressText"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoverySuburbTitle"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/discoveryRestSuburb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/discoverySuburbText"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wishlistRestaurantUrl"
+                        android:textSize="20sp"
+                        android:textStyle="normal"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/wishlistRestaurantPageUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textSize="20sp"
+                            android:textStyle="normal"
+                            android:ems="100"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="start|top"
+                            android:text="@string/www_tacotaco_com"
+                            android:background="@android:color/transparent"
+                            android:inputType="textMultiLine" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/wishlist_restaurant_footer" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

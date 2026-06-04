@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Holly Jacob-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Card_Factory.CardMoreActivity">
+    <include layout="@layout/wishlist_header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/wishlistHeader"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/wishlistEmptyText"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="">
+
+        </TextView>
+        <ListView
+            android:id="@+id/wishlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/restaurant_list_item" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

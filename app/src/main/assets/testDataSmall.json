@@ -1,0 +1,111 @@
+[
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-0/menu",
+    "address": "50 Northbourne Avenue",
+    "address line 2": "Deakin",
+    "name": "Curry Corner",
+    "outcode": "ACT9",
+    "postcode": "2639",
+    "rating": 3,
+    "comments": [
+      "Fairly priced but not memorable.",
+      "Good for a quick bite, but not a dining experience.",
+      "Food was decent but service was slow."
+    ],
+    "cuisine": "Thai",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-1/menu",
+    "address": "19 Lonsdale Street",
+    "address line 2": "Braddon",
+    "name": "Chinese Restaurant",
+    "outcode": "ACT24",
+    "postcode": "2682",
+    "rating": 1,
+    "comments": [
+      "Good value for money with friendly staff.",
+      "Nice atmosphere and great menu options.",
+      "Enjoyed the food, will be back!",
+      "Good food and nice service!"
+    ],
+    "cuisine": "Chinese",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-2/menu",
+    "address": "23 National Circuit",
+    "address line 2": "Weston Creek",
+    "name": "@ Thai",
+    "outcode": "ACT81",
+    "postcode": "2684",
+    "rating": 1,
+    "comments": [
+      "Worst experience ever, not coming back."
+    ],
+    "cuisine": "American",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-3/menu",
+    "address": "55 Canberra Avenue",
+    "address line 2": "Weston Creek",
+    "name": "Taco Town",
+    "outcode": "ACT64",
+    "postcode": "2684",
+    "rating": 5,
+    "comments": [
+      "Outstanding experience from start to finish.",
+      "Amazing experience, everything was perfect!"
+    ],
+    "cuisine": "American",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-4/menu",
+    "address": "1 Constitution Avenue",
+    "address line 2": "Deakin",
+    "name": "Grill House",
+    "outcode": "ACT74",
+    "postcode": "2643",
+    "rating": 3,
+    "comments": [
+      "Average experience, could be better.",
+      "It was okay, nothing special."
+    ],
+    "cuisine": "Thai",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-5/menu",
+    "address": "19 Lonsdale Street",
+    "address line 2": "Gungahlin",
+    "name": "Burgers & More",
+    "outcode": "ACT33",
+    "postcode": "2648",
+    "rating": 3,
+    "comments": [
+      "Food was decent but service was slow.",
+      "Fairly priced but not memorable.",
+      "Average experience, could be better."
+    ],
+    "cuisine": "Italian",
+    "number_of_reviews": 0
+  },
+  {
+    "URL": "http://www.just-eat.co.uk/restaurants-6/menu",
+    "address": "14 Edinburgh Avenue",
+    "address line 2": "Weston Creek",
+    "name": "@ Thai Restaurant",
+    "outcode": "ACT84",
+    "postcode": "2621",
+    "rating": 2,
+    "comments": [
+      "Service could be better, not worth the price.",
+      "Food was mediocre, but not horrible.",
+      "Not great, the food was underwhelming."
+    ],
+    "cuisine": "Japanese",
+    "number_of_reviews": 0
+  }
+]

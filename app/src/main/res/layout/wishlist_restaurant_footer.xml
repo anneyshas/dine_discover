@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Holly Jacob-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wishlistRestaurantfooter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/secondaryColor"
+
+    android:gravity="center" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/accentColor"
+        android:layout_above="@+id/linear_ll"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/linear_ll"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/review"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:id="@+id/wishlistReviewButton"
+                android:backgroundTint="@color/button_background_colour">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/view_ncomments"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:id="@+id/wishlistViewComments"
+                android:backgroundTint="@color/button_background_colour" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/delete"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:id="@+id/wishlistDeleteButton"
+                android:backgroundTint="@color/button_background_colour" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

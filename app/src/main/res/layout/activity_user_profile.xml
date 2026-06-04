@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Holly Jacob and Anneysha Sarkar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
+
+    <include layout="@layout/user_profile_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profileWelcomeText"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Welcome Username"
+                android:textAlignment="center"
+                android:textColor="@color/accentColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/accentColor" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/accentColor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_wishlist"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/accentColor"
+                android:layout_gravity="center">
+
+            </TextView>
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- Card 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView1"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant1" />
+
+                            <TextView
+                                android:id="@+id/cardTitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant1"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc1"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImage2"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant2" />
+
+                            <TextView
+                                android:id="@+id/cardTitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant2"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc2"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 3 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImage3"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant3" />
+
+                            <TextView
+                                android:id="@+id/cardTitle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant3"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc3"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 4 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImage4"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant4" />
+
+                            <TextView
+                                android:id="@+id/cardTitle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant4"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc4"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card 5 -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImage5"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant5" />
+
+                            <TextView
+                                android:id="@+id/cardTitle5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant5"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc5"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card More -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewMore"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <ImageView
+                                android:id="@+id/cardImageMore"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/see_more_wishlist" />
+
+                            <TextView
+                                android:id="@+id/cardTitleMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantMore"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescriptionMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDescMore"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <!-- Use wrap_content for height to avoid unnecessary stretching -->
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/button_background_colour"
+                    android:text="@string/profileSearchButtonStr" />
+
+
+                <Button
+                    android:id="@+id/myReviewsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/button_background_colour"
+                    android:text="@string/profileReviewsButtonStr" />
+
+
+                <Button
+                    android:id="@+id/profileHomeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/button_background_colour"
+                    android:text="@string/home" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Anneysha Sarkar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background_color"
+    android:orientation="vertical"
+    tools:context="com.example.dine_discover.MainActivity">
+    <include layout="@layout/main_page_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Existing elements -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_greeting"
+                android:textColor="#fffdfd"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.108" />
+
+            <!-- Horizontal ScrollView for the cards -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView3"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Image inside the CardView -->
+                            <ImageView
+                                android:id="@+id/cardImage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant1"/>
+
+                            <TextView
+                                android:id="@+id/cardTitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant1"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc1"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Image inside the CardView -->
+                            <ImageView
+                                android:id="@+id/cardImage2"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant2"/>
+
+                            <TextView
+                                android:id="@+id/cardTitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant2"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc2"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Image inside the CardView -->
+                            <ImageView
+                                android:id="@+id/cardImage4"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant3"/>
+
+                            <TextView
+                                android:id="@+id/cardTitle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant3"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc3"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Image inside the CardView -->
+                            <ImageView
+                                android:id="@+id/cardImage5"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant4"/>
+
+                            <TextView
+                                android:id="@+id/cardTitle5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant4"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc4"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView6"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Image inside the CardView -->
+                            <ImageView
+                                android:id="@+id/cardImage6"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/featured_restaurant5"/>
+
+                            <TextView
+                                android:id="@+id/cardTitle6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurant5"
+                                android:textColor="@color/scrollview_title_color"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/cardDescription6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/featuredRestaurantDesc5"
+                                android:textColor="@color/scrollview_subtitle_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/createWishListHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/button_background_colour"
+                android:text="@string/wishlistHome"
+                app:layout_constraintBottom_toBottomOf="@+id/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.615"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+                app:layout_constraintVertical_bias="0" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="409dp"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/createWishListHomeButton"
+                android:layout_marginTop="10dp"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/searchQuestionHome"
+                android:textColor="#fffdfd"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                android:layout_marginTop="50dp"
+                app:layout_constraintVertical_bias="0.1" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/searchQuestionSubtitleHome"
+                android:textColor="#fffdfd"
+                app:layout_constraintBottom_toTopOf="@+id/searchHomeButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/searchHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/button_background_colour"
+                android:text="@string/searchButtonHome"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0.1" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Author: Holly Jacob-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/linear_ll"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_24_red"
+            android:id="@+id/userProfileBackButton"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="My Account"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/toolbarTitle"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Logout"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:id="@+id/userProfileLogoutButton"
+            android:backgroundTint="@color/button_background_colour" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/accentColor"
+        android:layout_below="@+id/linear_ll"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"/>
+</RelativeLayout>
