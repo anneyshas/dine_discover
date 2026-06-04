@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654102236481",
+    "project_id": "comp2100-gp-s2-new",
+    "storage_bucket": "comp2100-gp-s2-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654102236481:android:a39804e6d49a7fe07e25c0",
+        "android_client_info": {
+          "package_name": "com.example.dine_discover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClmQsxOsh7pXfXt_k-oCTpQORtppdf2PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
